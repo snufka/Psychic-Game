@@ -33,17 +33,22 @@
    
 
    
-   for (var guesse = 1; guesse <10; guesse++) {
-            user= prompt("Enter a letter");                
+   
+                          
             computer = alphabet[Math.floor(Math.random() * alphabet.length)];
-            alert("computer choose: "+computer)
-
-            if (user == computer) {{break}
+           
+        
+        for (var guesse = 1; guesse <10; guesse++) {
+            user= prompt("Enter a letter"); 
+                    alert("computer choose: "+computer)
+            if (user == computer) {
                     wins++
-                    alert("wins: "+ wins);
+                    alert("wins: "+ wins);{break}
              } else 
-             losses++
-             alert("losses: "+ losses +" You have "+ (9 -guesse)+" guesse left")
+            
+             alert("Wrong! You have "+ (9 -guesse)+" guesse left")
+        // if after 9 guesses wins <1 than losses++//
+        
    }
         
               
