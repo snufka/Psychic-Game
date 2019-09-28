@@ -47,8 +47,12 @@
              } else 
             
              alert("Wrong! You have "+ (9 -guesse)+" guesse left")
-        // if after 9 guesses wins <1 than losses++//
-        
+        // if after 9 guesses wins <1 than losses++   //
+        if (guesse===9 && wins===0){
+            losses++
+            alert("you losse")
+        }
+        //To add-other key presses are invalid//
    }
         
               
