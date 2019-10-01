@@ -21,6 +21,8 @@
       var wins = 0;
       var losses = 0;
       var leftGuesse = 9;
+     // var leftGuesse = [9 ,8 ,7 ,6 ,5 ,4 ,3 ,2 ,1];
+
 
       document.onkeypress = function (event) {
         var user = String.fromCharCode(event.keyCode)
@@ -37,11 +39,11 @@
     
           if (user == computer) {
             wins++
-            { break }
+          { break }
             
           } else if (user !== computer) {
-            leftGuesse--
-            
+          leftGuesse-- 
+          //leftGuesse[guesse]  
           
           }
           else if (guesse === 9 && wins === 0) {
